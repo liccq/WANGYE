@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  
+    <title>猫鼠主题游乐园</title>
+    <style>
+        .header-carousel-item{
+            height:450px;}
+        .form-control{
+            border-width: 3px;
+        }
+        .bg-cover{
+        background-size:cover;
+        background-position:center center;}
+        .carousel-caption{
+            background-color:rgba(0,0,0,.6);}
+        @media(min-width:768px)
+        {
+            .text-md-dark{
+                color:#333
+            }
+        }
+    </style>
+    </head>
+  <body>
+    <div class="bg-secondary py-2">
+        <div class="container text-right">
+        <a href="#"class="text-white"><i class="fab fa-weibo"></i></a>
+        <a href="#"class="text-white"><i class="fab fa-facebook-square"></i></a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="/0506.folder/0506/images/logo_w.svg" width="120" height="24"alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  
+                 服务
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">门票预约</a>
+                  <a class="dropdown-item" href="#">餐饮预约</a>
+                  <a class="dropdown-item" href="#">行李存放</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">其他服务</a>
+                </div>
+            
+              </li>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  
+                 交通
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">地铁专线</a>
+                  <a class="dropdown-item" href="#">机场接驳</a>
+                  <a class="dropdown-item" href="#">高铁站点</a>
+                  
+                </div>
+            
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  
+                 下载中心
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">App下载</a>
+                  <a class="dropdown-item" href="#">地图下载</a>                            
+                </div>
+            
+              </li>
+              
+            </ul>
+            
+            <form class="form-inline my-2 my-lg-0">
+           
+                <a class="text-white"> <i class="fa fa-phone">    联系我们：15800259534</i></a>
+              
+                <a href=""class="btn btn-primay" data-toggle="modal" data-target="#loginModal"> 登入</a>
+                <a href=""class="btn btn-primay" data-toggle="modal" data-target="#registerModal">注册会员</a>
+                <a href="backstage.html" class="btn btn-outline-info">员工后台</a> 
+            </form>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item header-carousel-item bg-cover active"
+              style="background-image: url(https://img.youxi369.com/article/contents/2019/11/18/20191118105236965.jpg);">
+              <div class="carousel-caption d-none d-md-block px-3">
+                <h1>激情集结号——猫鼠主题游乐场</h1>
+                <h4>刺激好玩，你还等什么！为你的轻松玩乐服务——猫鼠游乐场。止不住的尖叫，止不住的欢乐。</h4>
+              </div>
+            </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                style="background-image: url(https://www.jbyoule.com/UploadFiles/Product/20190308104624631698.jpg);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                  <h1>欢乐地带，自由自在</h1>
+                  <h4>水陆双游乐，新鲜又好玩。畅游天地间，开心乐无边。在这里，我们一样年轻！</h4>                    
+                </div>
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                style="background-image: url(https://up.netbian.net/pic/ed/25/fd/ed25fd2143366dc59d54a3349456fdb7.jpg);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                  <h1>猫鼠主题酒店</h1>
+                <h4>在旅游或者出差的时候，我们来到另外一个城市。酒店的选择就非常重要。酒店的环境和服务是非常重要的。在你游玩感到疲惫的时候，给你一个温暖的港湾。</h4>
+              </div>
+            </div>
+            </div> 
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <section class="bg-info text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="mb-2"><i class="fa fa-thumbs-up fa-5x"></i></div>
+                    <h3>乐园亮点</h3>
+                    <p>猫鼠游乐园占地近5000平方米，是一座超大型主题游戏乐园，里面有大型表演舞台、高近20米的双道螺旋滑梯、百米跳楼机、无敌大摆锤、成人和儿童过山车等游乐设施，可同时容纳超3000人嬉戏享受，是目前东南地区最全面的主题乐园。</p>
+                </div>
+                <div class="col-4">
+                    <div class="mb-2"><i class="fas fa-utensils fa-5x"></i></div>
+                    <h3>畅享乐园美食</h3>
+                    <p>美食，大概是世界上最治愈人心的东西了。
+
+因为胃和心的距离很近，
+
+当你吃饱了的时候，
+
+暖暖的胃会挤占心脏的位置，
+
+这样心里就不会觉得那么冷清。。</p> 
+                </div>
+                <div class="col-4">
+                    <div class="mb-2"><i class="fa fa-bed fa-5x"></i></div>
+                    <h3>入住主题酒店</h3>
+                    <p>我的选择，我的温馨。一起入住猫和老鼠主题洞穴酒店，回味童年，劳累一天，最舒适莫过于温馨美好的酒店，无论大人还是小孩，都会被主题酒店的布景深深吸引，带着童年进入梦乡。</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="container-fluid py-5 bg-light text-white" style="position:relative">
+    <div class="row">
+<!--         <div class="col-md-5 bg-cover" style="position: absolute;top: 0;bottom: 0;background-image: url(https://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b7003af33a87e95066afcf4212385343fbf2b467.jpg);"></div> -->
+      
+      <div class="col-md-5 bg-cover" style="position: absolute;top: 0;bottom: 0;background-image: url(https://img.zcool.cn/community/01245059ae66eba8012028a96249cb.jpg@1280w_1l_2o_100sh.jpg);"></div>
+      
+        <div class="cotainer"> 
+            <div class="row justify-content-end text-md-dark">
+                <div class="col-md-7">
+<!--                   <div class="col-md-7 bg-cover" style="position: absolute;top: 0;bottom: 0;background-image: url(https://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b7003af33a87e95066afcf4212385343fbf2b467.jpg);"></div> -->
+                    <h3>高考考生大优惠</h3>
+                    <p>只要凭2021年高考准考证，到售票处出示，即可半价畅玩</p> 
+                  
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h3>家庭入住优惠</h3>
+                            <p>凡暑假期间，凭家庭三人乐园门票（两大一小），可享入住豪华亲子房8折优惠，每日限量300套，先到先得</p>
+                        </div>
+                        <div class="col-md-6"> 
+                            <h3>情侣票优惠</h3>
+                            <p>情侣票享399两人乐园门票，入住酒店享999元特惠套餐包双人门票，外加赠奶酪主题自助早餐两人份</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+           <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <!-- sticky-top https://getbootstrap.com/docs/4.0/utilities/position/ -->
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list">
+                      <i class="fab fa-old republic mr-2"></i>门票预订
+                    </a>
+                
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-old mr-2"></i>酒店预订
+                    </a>
+                   <a href="#pane-3" class="list-group-item list-group-item-action"data-toggle="list">
+                        <i class="fas fa-old mr-2"></i>园区美食
+                    </a>
+
+                  </div> 
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content">
+
+                    <!-- pane-1 -->
+                    <div class="tab-pane active" id="pane-1">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input type="search" class="form-control col-md-4 col-9 rounded-0" placeholder="Search"
+                            aria-label="Search">
+                            <button class="btn btn-outline-warning my-2 my-sm-0 rounded-0" type="submit">Search</button>
+                        </form>
+                        <div class="row mt-2 mt-md-4 mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!-- box-shadow阴影效果CSS -->
+                                    <!-- border-0移除线条 -->
+                                    <img class="card-img-top"
+                                    src="https://up.36992.com/pic/49/17/51/491751df6a8f2918b22eef15456d25ef.jpg" 
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">门票预订</h5>
+                                        <p class="card-text">全日票：280
+                                           <p class="card-text">夜间票：180
+                                               <p class="card-text">两日连玩票：350
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <!-- border-top-0上面线条移除 -->
+                                        <!-- bg-white底色白色 -->
+                                        <!-- https://getbootstrap.com/docs/4.0/components/button-group/ -->
+                                        <div class="btn-group  btn-group-sm">
+                                            <a href="shopping trolley.html" class="btn btn-outline-secondary">全日票</a>
+                                        
+                                            <a href="shopping trolley.html" class="btn btn-outline-secondary">夜场票</a>
+                                           <a href="shopping trolley.html" class="btn btn-outline-secondary">两日票</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                    src="https://p1.ssl.qhmsg.com/t0100b9a39648501dfd.jpg" 
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">优惠票</h5>
+                                        <p class="card-text">高考考生全日票：140
+                                        </p>
+                                       <p class="card-text">儿童全日票：160
+                                        </p>
+                                            
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <!-- border-top-0上面线条移除 -->
+                                        <!-- bg-white底色白色 -->
+                                        <!-- https://getbootstrap.com/docs/4.0/components/button-group/ -->
+                                        <div class="btn-group  btn-group-sm">
+                                            <a href="shopping trolley" class="btn btn-outline-secondary">高考考生</a>
+                                            <a href="shopping trolley" class="btn btn-outline-secondary">儿童</a>
+<!--                                             <a href="#" class="btn btn-outline-secondary  disabled">L</a>
+                                            <a href="#" class="btn btn-outline-secondary">XL</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                    src="https://img.phb123.com/uploads/allimg/200918/57-20091QG238-50.jpg" 
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">优惠套票</h5>
+                                        <p class="card-text">家庭全日套票2大1小：550
+                                        </p>
+                                        <p class="card-text">情侣全日套票：520
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <!-- border-top-0上面线条移除 -->
+                                        <!-- bg-white底色白色 -->
+                                        <!-- https://getbootstrap.com/docs/4.0/components/button-group/ -->
+                                        <div class="btn-group  btn-group-sm">
+                                            <a href="shopping trolley.html" class="btn btn-outline-secondary">家庭套票</a>
+                                            <a href="shopping trolley.html" class="btn btn-outline-secondary">情侣套票</a>
+<!--                                             <a href="#" class="btn btn-outline-secondary  disabled">L</a>
+                                            <a href="#" class="btn btn-outline-secondary">XL</a> -->
+                                        </div>
+                                    </div>
+<!--                                     <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block">去抢购</a>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                    src="https://zedemy.com/wp-content/uploads/2020/08/VVip-Member.png" 
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">尊贵年卡</h5>
+                                        <p class="card-text">随时随地，免费入园
+                                        </p>
+                                       <p class="card-text">一次消费，一年享受
+                                        </p>
+                                       <p class="card-text">限时1350元/位
+                                        </p>
+                                      <p class="card-text">赠一晚主题豪华套房
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block">去抢购</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                          
+                          <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                    src="https://schoolmeritstickers.com/data/img/products/main/_cache/37d641ea0812d044b908093bb9eb11fa.jpg?52abce62" 
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">尊贵季卡</h5>
+                                        <p class="card-text">畅玩暑假，优惠不停
+                                        </p>
+                                       <p class="card-text">限时680元/位
+                                        </p>
+                                       <p class="card-text">赠豪华自助晚餐1位
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block ">去抢购</a>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                         </div>
+                      </div>
+                      
+                     <div class="tab-pane" id="pane-2">
+                           <div class="row mb-4">
+                             <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                    src="https://www.fullon-hotels.com.tw/upload/restaurant_list_second/kh_cnL_room_20G20_9h8krfra3u.jpg">
+                                    <div class="card-body">
+                                        <h5 class="card-title">汤姆主题房</h5>
+                                      <h5 class="card-text"> 580/晚
+                                        </h5>
+                                        <p class="card-text"> 雅致双床房
+                                        </p>
+                                            <p class="card-text"> 两位入住
+                                        </p>
+                                       <p class="card-text">浴室: 淋浴, 园区窗景
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block ">可预订</a>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                    src="https://www.princehotels.com/shiomi/wp-content/uploads/sites/59/2019/12/tokyo-bay-shiomi-prince-hotel-deluxe-corner-twin-room-1920.jpg" 
+                                    height="150px"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                         <h5 class="card-title">杰瑞主题房<h5>
+                                            <h5 class="card-text"> 880/晚 </h5>
+                                        <p class="card-text"> 豪华大床房
+                                        </p> 
+                                      <p class="card-text"> 两位入住
+                                        </p>
+                                       <p class="card-text">浴室: 淋浴+浴缸, 花园景观
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block">可预订</a>
+                                    </div>
+                                </div>
+                            </div>
+                               
+                        </div>
+                         <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                    src="https://hrdalian.sdyf-pros.dragontrail.cn/wp-content/uploads/sites/8/2020/06/%E7%BB%8F%E5%85%B8%E6%88%BF-2.jpg"
+                                    height="150px"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                         <h5 class="card-title">猫鼠亲子房</h5>
+                                            <h5 class="card-text"> 680/晚 </h5>
+                                        <p class="card-text"> 温馨超大床房
+                                        </p> 
+                                      <p class="card-text"> 两大一小入住
+                                        </p>
+                                       <p class="card-text">可加榻榻米
+                                        </p>
+                                       <p class="card-text">浴室: 淋浴, 阳台
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block" >可预订</a>
+                                    </div>
+                                </div>
+                            </div>
+                               
+                         </div>
+
+
+                        <div class="tab-pane" id="pane-3">
+                            <div class="row mb-4">
+                              <div class="col-md-4 mb-4">
+                                 <div class="card box-shadow border-0 text-center h-100">
+                                     <img class="card-img-top"
+                                     src="https://cp1.douguo.com/upload/caiku/c/4/9/yuan_c4b84bad9db963d97fb226abd7537089.jpeg"height="180px">
+                                     <div class="card-body">
+                                         <h5 class="card-title">晚餐自助</h5>
+                                       <p class="card-text"> 299/位
+                                         </p>
+                                         <p class="card-text"> 芝士焗龙虾
+                                         </p>
+                                             <p class="card-text">特级和牛
+                                         </p>
+                                     <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block">预订</a>
+                                    </div>
+                                    
+                                     </div>
+                                    
+                                 </div>
+                             </div>
+                              
+                             <div class="col-md-4 mb-4">
+                                 <div class="card box-shadow border-0 text-center h-100">
+                                     <img class="card-img-top"
+                                     src="https://img95.699pic.com/photo/50059/4925.jpg_wh860.jpg"height="180px" 
+                                     alt="Card image cap">
+                                     <div class="card-body">
+                                          <h5 class="card-title">午餐自助</h5>
+                                             <p class="card-text"> 198/位 </p>
+                                         <p class="card-text"> 炙烤全羊
+                                         </p> 
+                                       <p class="card-text"> 海鲜刺身
+                                         </p>
+                                         <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block">预订</a>
+                                    </div>
+                                     </div>
+                                    
+                                 </div>
+                             </div>
+                              <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                     src="https://www.photophoto.cn/m6/023/013/0230130046.jpg"
+                                    height="180px">
+                                    <div class="card-body">
+                                        <h5 class="card-title">园区饮品自助</h5>
+                                        <p class="card-text">59/位
+                                        </p>
+                                        <p class="card-text">园区内指定饮品无限量
+                                        </p>
+                                        <p class="card-text">激情畅饮
+                                        </p>
+                                       <div class="card-footer border-top-0 bg-white">
+                                        <a href="shopping trolley.html" class="btn btn-outline-secondary btn-block">预订</a>
+                                    </div>
+                                    </div>    
+                         </div>
+ 
+ 
+                        
+                          </div>
+  
+                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+                                  
+        <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-center mb-5">
+                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+        </nav>
+
+    </div>
+          
+          
+          
+          
+          
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+                <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+                <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+                <title>百度地图API自定义地图</title>
+                <!--引用百度地图API-->
+                <style type="text/css">
+                    html,body{margin:0;padding:0;}
+                    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+                    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+                </style>
+                <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+                </head>
+
+                <body>
+                <!--百度地图容器-->
+                <div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+                </body>
+                <script type="text/javascript">
+                    //创建和初始化地图函数：
+                    function initMap(){
+                        createMap();//创建地图
+                        setMapEvent();//设置地图事件
+                        addMapControl();//向地图添加控件
+                    }
+                    
+                    //创建地图函数：
+                    function createMap(){
+                        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                        var point = new BMap.Point(113.783059,23.060042);//定义一个中心点坐标
+                        map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
+                        window.map = map;//将map变量存储在全局
+                    }
+                    
+                    //地图事件设置函数：
+                    function setMapEvent(){
+                        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                        map.enableKeyboard();//启用键盘上下左右键移动地图
+                    }
+                    
+                    //地图控件添加函数：
+                    function addMapControl(){
+                        //向地图中添加缩放控件
+                    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                    map.addControl(ctrl_nav);
+                        //向地图中添加缩略图控件
+                    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                    map.addControl(ctrl_ove);
+                        //向地图中添加比例尺控件
+                    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                    map.addControl(ctrl_sca);
+                    }
+                    
+                    
+                    initMap();//创建和初始化地图
+                </script>
+                </html>
+                </div>
+                <div class="col-md-6">
+                  <h4>团队预订</h4>
+                    <form action="">
+                        <div class="form-group">
+                          <label for="username">姓名</label>
+                          <input type="text" class="form-control" id="username"  placeholder="请输入姓名" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="tel">电话</label>
+                          <input type="tel" class="form-control" id="tel" placeholder="请输入电话">
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email"  placeholder="请输入Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Number">输入人数</label>
+                            <input type="number" class="form-control" id="Number" placeholder="请输入人数">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                需要导游
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                               不需要导游
+                            </label>
+                          </div>
+                          <div class="text-right">
+                            <button type="button"class="btn btn-secondary">取消</button>
+                            <button type="submit"class="btn btn-primary">发送</button>
+                          </div>
+                          
+                        
+                      </form>
+                </div>
+            </div>
+        </div>
+ 
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" bg-primary text-white>
+          <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">信箱</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">保密</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">密码</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">记住密码</label>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">切换到注册</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+          <h5 class="modal-title" id="exampleModalLabel">注册</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-md-6">
+                <h3>注册乐园会员</h3>
+                <p>注册享优惠8.8折</p>
+                <p>特惠活动抢先知道</p>
+                 <p>精美礼品送不停</p>
+              </div>
+              <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">信箱</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">保密</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">密码</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">确定密码</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">记住密码</label>
+                    </div>
+                  </form>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切换到登入</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

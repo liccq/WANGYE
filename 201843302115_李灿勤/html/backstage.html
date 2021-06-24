@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>员工后台</title>
+</head>
+ 
+
+<body >
+    <!-- Navbar的部分https://getbootstrap.com/docs/4.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">猫鼠游乐园门票预订后台</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-var d-flex">
+                <a href="home page.html" class="nav-item nav-link active">首页<span class="sr-only">(current)</span></a>
+                <a href="home page.html" class="nav-item nav-link">返回</a>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid mt-4">
+        
+            <div class="col-lg-20">
+                <div class="card h-100">
+                    <div class="card header bg-dark text-light" style="font-weight: bold;">订单</div>
+                    <div class="card body">
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="co1">门票类型</th>
+                                    <th scope="col">用户姓名</th>
+                                    <th scope="col">手机号</th>
+                                    <th scope="co1"class="text-right pr-5">订票数</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>情侣票</td>
+                                    <td>蔡一</td>
+                                    <td>18802083288</td>
+                                    <td class="text-right">1</td>
+                                </tr>
+                                <tr>
+                                    <td>全日票</td>
+                                    <td>张三</td>
+                                    <td>13650406732</td>
+                                    <td class="text-right">2</td>
+                                </tr>
+                                <tr>
+                                    <td>家庭票</td>
+                                    <td>李四</td>
+                                    <td>13665537832</td>
+                                    <td class="text-right">1</td>
+                                </tr>
+                                <tr>
+                                    <td>高考票</td>
+                                    <td>孙五</td>
+                                    <td>15802806636</td>
+                                    <td class="text-right">1</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right">总票数</td>
+                                    <td class="text-right">5张</td>
+                                </tr>
+                                
+                            </tbody>
+                            
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+  
+
+        <!-- table-hover可显示横条 -->
+        <table class="table tabke-responsive table-hover">
+            <thead>
+              <tr>
+                <th width="10">Number</th>
+                <th width="120">景点</th>
+                <th width="120">客户昵称</th>
+                <th width="280">Email</th>
+                <th width="120">状态</th>
+                <th class="text-right"width="120">金额</th>
+                <th width="150"class="text-center">操作</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+                <!-- 栏位颜色Tables里面Contextual classes -->
+                <tr>
+                    <th scope="row">1</th>
+                    <td class="text-primary">张三</td>
+                    <td class="text-center">张三<span class="badge badge-pill badge-danger">新用户</span></td>
+                    <td class="text-center">5444566@gmail.com</td>
+                    <td class="text-center">交易完成</td>
+                    <td class="text-right">$540</td>
+                    <td class="text-center">
+                        <!-- Button group--Basic example按钮群 -->
+                        <!-- btn-group-sm调整按钮大小 -->
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-outline-secondary" data-toggle="modal"
+                            data-target="#editModal" data-title="编辑 PS5" data-backdrop="static">编辑</button>
+                            <button type="button" class="btn btn-secondary btn-outline-secondary">查看</button>
+                            <!-- 注意这一段data-toggle="modal" data-target="#editModal"是由上面复制下来的 -->
+                            <!-- Dropdowns--split button dropdowns下拉选单 -->
+                            <button type="button"class="btn btn-danger dropdown-toggle"data-toggle="dropdown"
+                            aria-haspopup="true"aria-expanded="false">其他</button> 
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">操作记录</a>
+                                <a href="#" class="dropdown-item">资料汇出</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item text-danger" data-toggle="modal" data-target="#removeModal"
+                                data-title="PS5">删除订单</a>
+                            </div>
+    
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">2</th>
+                    <td class="text-primary">情侣票</td>
+                    <td class="text-center">Jerry<span class="badge badge-pill badge-success">老客户</span></td>
+                    <td class="text-center">888666@qq.com</td>
+                    <td class="text-center">待付款</td>
+                    <td class="text-right">$520</td>
+                    <td class="text-center">
+                        <!-- Button group--Basic example按钮群 -->
+                        <!-- btn-group-sm调整按钮大小 -->
+                        <div class="btn-group  btn-group-sm" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-outline-secondary" data-toggle="modal"
+                            data-target="#editModal" data-title="编辑 Switch" data-backdrop="static">编辑</button>
+                            <button type="button" class="btn btn-secondary btn-outline-secondary">查看</button>
+                            <!-- 注意这一段data-toggle="modal" data-target="#editModal"是由上面复制下来的 -->
+                            <!-- Dropdowns--split button dropdowns下拉选单 -->
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">其他</button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">操作记录</a>
+                                <a href="#" class="dropdown-item">资料汇出</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item text-danger" data-toggle="modal" data-target="#removeModal"
+                                data-title="Switch">删除订单</a>
+                            </div>
+    
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th scope="row">3</th>
+                    <td class="text-primary">家庭票</td>
+                    <td class="text-center">李四<span class="badge badge-pill badge-success">新客户</span></td>
+                    <td class="text-center">123@gmail.com</td>
+                    <td class="text-center">交易完成</td>
+                    <td class="text-right">$580</td>
+                    <td class="text-center">
+                        <div class="btn-group  btn-group-sm" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-outline-secondary" data-toggle="modal"
+                            data-target="#editModal" data-title="编辑" data-backdrop="static">编辑</button>
+                            <button type="button" class="btn btn-secondary btn-outline-secondary">查看</button>
+                            <!-- 注意这一段data-toggle="modal" data-target="#editModal"是由上面复制下来的 -->
+                            <!-- Dropdowns--split button dropdowns下拉选单 -->
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">其他</button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">操作记录</a>
+                                <a href="#" class="dropdown-item">资料汇出</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item text-danger" data-toggle="modal" data-target="#removeModal"
+                                data-title="笔记本电脑">删除订单</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="7"></th>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="7">更多</th>
+                </tr>
+    
+                <tr>
+                    <th scope="row"colspan="7">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%"></div>
+                    </div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th width="50">日期</th>
+                    <th>订单数</th>
+                    <th>退货数</th>
+                    <th>总人流量</th>
+                    <th width="15%">投诉量</th>
+                    <th width="150">营业额</th>
+                    <th width="150">净利润</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">3/1</th>
+                    <td>377</td>
+                    <td>0</td>
+                    <td>600</td>
+                    <td>3</td>
+                    <td class="text-right">299,000</td>
+                    <td class="text-right">128,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">3/2</th>
+                    <td>246</td>
+                    <td>2</td>
+                    <td>750</td>
+                    <td>2</td>
+                    <td class="text-right">1600,000</td>
+                    <td class="text-right">108,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">3/3</th>
+                    <td>458</td>
+                    <td>3</td>
+                    <td>850</td>
+                    <td>1</td>
+                    <td class="text-right">200,000</td>
+                    <td class="text-right">210,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">3/4</th>
+                    <td>362</td>
+                    <td>0</td>
+                    <td>530</td>
+                    <td>3</td>
+                    <td class="text-right">285,000</td>
+                    <td class="text-right">110,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">3/5</th>
+                    <td>379</td>
+                    <td>0</td>
+                    <td>470</td>
+                    <td>3</td>
+                    <td class="text-right">298,000</td>
+                    <td class="text-right">134,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">3/6</th>
+                    <td>288</td>
+                    <td>1</td>
+                    <td>544</td>
+                    <td>3</td>
+                    <td class="text-right">264,000</td>
+                    <td class="text-right">106,000</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" class="text-right">总营收</td>
+                        <!-- colspan="6"-合并6个栏位 -->
+                        <td class="text-right">1,750,500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="text-right">总净利</td>
+                        <td class="text-right">1,140,500</td>
+                    </tr>
+                </tfoot>
+            </table>
+    </div>
+
+    <footer class="py-3 bg-light">
+        <div class="d-flex">
+            <div class="ml-5">
+                <p><a href="home page.html">@ 2021 猫鼠游乐园</a></p>
+            </div>
+            <div class="ml-5">
+                <p>猫鼠游乐园欢迎您！</p>
+            </div>
+        </div>
+
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<script src="js/all.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+ 

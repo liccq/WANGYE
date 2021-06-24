@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>购物车详情页面</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget)
+                var title = button.data('title')
+                var modal = $(this)
+                modal.find('.modal-title').text('確認' + title)
+            })
+        });
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</head>
+
+
+<body>
+
+
+<div class="container main-contant py-5">
+    <h1 class="text-center mb-3 text-secondary">结账</h1>
+    <div class="form-row text-center">
+        <div class="col-12 col-sm">
+            <!-- https://getbootstrap.com/docs/4.0/components/alerts/提示框alert-rounded改成大圆角css修改 -->
+            <div class="alert alert-success alert-rounded" role="alert">
+                1、输入订单资料
+            </div>
+        </div>
+        <div class="col-12 col-sm">
+            <div class="alert alert-light alert-rounded" role="alert">
+                2、金流付款
+            </div>
+        </div>
+        <div class="col-12 col-sm">
+            <div class="alert alert-light alert-rounded" role="alert">
+                3、完成
+            </div>
+        </div>
+    </div>
+    <!-- 折叠式选项 -->
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <!-- https://getbootstrap.com/docs/4.0/components/collapse/ -->
+            <div class="card">
+                <div class="card-header d-flex" id="headingOne">
+                    <button class="btn btn-link" data-toggle="collapse" datas-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        显示购物车细节
+                    </button>
+                    <div class="ml-auto">
+                        <span class="h3">￥520</span>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#headingOne">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th width="30"></th>
+                            <th width="100"></th>
+                            <th>商品名称</th>
+                            <th width="100">数量</th>
+                            <th width="80">小计</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                    data-title="删除 金牌西装 1 件">
+                                    <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="py-1" width="130">
+                                <img src="https://images.unsplash.com/photo-1494281258937-45f2853affd?w=1350"
+                                    class="img-thumbnail" alt="">
+                            </td>
+                            <td class="align-middle">金牌西装</td>
+                            <td class="align-middle">1 件</td>
+                            <td class="align-middle text-right">$520</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">运费</td>
+                            <td class="text-right">
+                                <strong>$60</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">合计</td>
+                            <td class="text-right">
+                                <strong>$580</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 订购人资讯 -->
+            <div class="card border-0 rounded-20 mt-5">
+                <div class="card-header border-bottom-0">
+                    <h3 class="text-center">订单详情</h3>
+                </div>
+            </div>
+            <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+            <form class="mt-3 needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">姓名</label>
+                        <input type="text" class="form-control" id="name" placeholder="姓名" required>
+                        <div class="invalid-feedback">
+                            请输入姓名
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">联系方式 </label>
+                        <input type="email" class="form-control" id="number" placeholder="number" required>
+                        <div class="invalid-feedback">
+                            请输入手机号码
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="country">年</label>
+                        <select id="country" class="form-control">
+                            <option selected></option>
+                            <option>2021年</option>
+                         
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="city">月</label>
+                        <select id="city" class="form-control">
+                            <option selected>1月</option>
+                            <option>2月</option>
+                            <option>3月</option>
+                           <option>4月</option> 
+                          <option>5月</option>
+                           <option>6月</option>
+                           <option>7月</option>
+                           <option>8月</option>
+                           <option>9月</option>
+                           <option>10月</option>
+                          <option>11月</option>
+                          <option>12月</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="zipcode">日</label>
+                        <input type="text" class="form-control" id="zipcode" required>
+                            <div class="invalid-feedback">
+                                入园日期
+                            </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="address">备注</label>
+                        <input type="text" class="form-control" >
+                        <div class="invalid-feedback">
+                            请输入备注
+                        </div>
+                    </div>             
+                </div>
+                <div class="d-flex justify-content-end">
+                    <a href="Order Inquiry.html" class="btn btn-secondary mr-1">订单查询</a>
+                    <a href="home page.html" class="btn btn-secondary mr-1">继续订购</a>
+                    <button type="submit" class="btn btn-primary">确认付款</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<script src="js/all.js"></script>
+
+</body>
+
+</html>
